@@ -6,7 +6,7 @@ const io = require('socket.io')(server);
 app.use(express.static("./public"))
 /*----tender html file----*/
 app.get("/", function(req, res,next){
-    res.sendFile('./public/index.html');
+    res.sendFile('public/index.html');
 })
 /*---------Get connection from client------------------------*/
 io.on("connection", function(socket){
