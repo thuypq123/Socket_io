@@ -19,4 +19,4 @@ io.on("connection", function(socket){
 })
 
 /*---------------- listen port----------------*/
-server.listen(3000, console.log("is connection"));
+server.listen(process.env.PORT, console.log("is connection"));
